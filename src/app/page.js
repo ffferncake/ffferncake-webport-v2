@@ -44,7 +44,7 @@ const experience = [
 ];
 
 const skills = ["React", "React Native", "Next.js", "Node.js", "PostgreSQL / MySQL / Hive", "HTML / JavaScript / CSS", "Apache Airflow / ETL / Python", "QGIS / ArcGIS Pro / ArcMap", "GeoServer / MapServer"];
-const languages = ["Thai · Native", "Korean · TOPIK Level 4 (172/300)", "English · TOEIC 850/990", "English · IELTS 6.5/9.0"];
+const languages = ["Thai · Native", "Korean · TOPIK Level 5/6 (202/300)", "English · TOEIC 850/990", "English · IELTS 6.5/9.0"];
 const honors = ["3rd place & GISTDA Award · Galileo Hackathon", "Galileo and Smart RTK Hackathon participant", "Outstanding Student Medal · 2020", "Highest GPA · Survey Engineering and Geographic Information · 2020", "Outstanding International Student Scholarship III · Yonsei University", "Outstanding Scholarship · Kasetsart University"];
 
 export default function Home() {
