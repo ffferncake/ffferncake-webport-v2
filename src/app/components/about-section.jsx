@@ -1,13 +1,14 @@
 "use client";
 import React, { useTransition, useState, useEffect } from "react";
 import Image from "next/image";
-import TabButton from "./TabButton";
+import TabButton from "./tab-button";
 import KusIcon from "../../../public/images/education/kus.gif";
 import KuIcon from "../../../public/images/education/ku-modified.png";
-import YonseiIcon from "../../../public/images/education/YonseiUniversityEmblem.png";
-import GISIcon from "../../../public/images/education/gis_logo.png";
+import YonseiIcon from "../../../public/images/education/yonsei-university-emblem.png";
+import GISIcon from "../../../public/images/education/gis-logo.png";
 import JicaIcon from "../../../public/images/education/logo-jica.png";
 import MaholanIcon from "../../../public/images/education/maholan.png";
+import MapseaIcon from "../../../public/images/education/mapsea.png";
 
 const TAB_DATA = [
   {
@@ -25,7 +26,7 @@ const TAB_DATA = [
         <li>QGIS/ArcGIS Pro/ArcMap</li>
         <li>GeoServer/MapServer</li>
       </ul>
-    ),
+    )
   },
   {
     title: "lang-Skills",
@@ -37,7 +38,7 @@ const TAB_DATA = [
         <li>TOEIC (English) : 850/990 </li>
         <li>IELTS (English) : 6.5/9.0 </li>
       </ul>
-    ),
+    )
   },
   {
     title: "Education",
@@ -111,7 +112,7 @@ const TAB_DATA = [
           </li>
         </ol>
       </ul>
-    ),
+    )
   },
   {
     title: "Certifications",
@@ -132,7 +133,7 @@ const TAB_DATA = [
         </li>
         <li>Outstanding Scholarship (Kasetsart University)</li>
       </ul>
-    ),
+    )
   },
   {
     title: "Experience",
@@ -227,10 +228,35 @@ const TAB_DATA = [
               </p>
             </div>
           </li>
+          {/* <!--Fifth item--> */}
+          <li>
+            <div className="flex-start flex items-center pt-2 md:block md:pt-0">
+              <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500 md:-mt-[5px] md:ml-0 md:mr-0"></div>
+              <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-300">
+                2024.06 ~ now
+              </p>
+            </div>
+            <div className="ml-4 mt-2 pb-5 md:ml-0">
+              <Image
+                src={MapseaIcon}
+                alt="Mapsea Icon"
+                width={35}
+                height={35}
+              />
+              <h4 className="mb-1.5 text-md font-semibold">
+                mapsea Coorporation (주) 맵시
+              </h4>
+              <p className="mb-3 text-sm text-neutral-500 dark:text-neutral-300">
+                💻 Front-End Developer <br />
+                🚢 Real-Time Global Vessel Monitoring Solution <br />
+                🌊 Weather API/Layer Overlay Development
+              </p>
+            </div>
+          </li>
         </ol>
       </ul>
-    ),
-  },
+    )
+  }
 ];
 
 const AboutSection = () => {
@@ -255,7 +281,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative">
-      {/* <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative"> */}
+        {/* <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 relative"> */}
         {/* <div className="rounded-full bg-[#ffff] w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] relative"> */}
         <center>
           <Image

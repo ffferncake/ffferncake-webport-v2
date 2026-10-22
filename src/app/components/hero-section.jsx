@@ -4,12 +4,12 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import GithubIcon from "../../../public/images/sns-icon/github_negative.png";
-import LinkedinIcon from "../../../public/images/sns-icon/linkedIn_negative.png";
-import InstragramIcon from "../../../public/images/sns-icon/instagram_negative.png";
-import MediumIcon from "../../../public/images/sns-icon/medium_negative.png";
+import GithubIcon from "../../../public/images/sns-icon/github-negative.png";
+import LinkedinIcon from "../../../public/images/sns-icon/linked-in-negative.png";
+import InstragramIcon from "../../../public/images/sns-icon/instagram-negative.png";
+import MediumIcon from "../../../public/images/sns-icon/medium-negative.png";
 import KakaoIcon from "../../../public/images/sns-icon/kakao.png";
-import LineIcon from "../../../public/images/sns-icon/line_white.png";
+import LineIcon from "../../../public/images/sns-icon/line-white.png";
 
 const HeroSection = () => {
   const [flipImage, setFlipImage] = useState(false);
@@ -42,8 +42,8 @@ const HeroSection = () => {
                 1000,
                 "Web Developer",
                 1000,
-                "Mobile Developer",
-                1000
+                // "Mobile Developer",
+                // 1000
                 // "UI/UX Designer",
                 // 1000,
               ]}
@@ -103,7 +103,7 @@ const HeroSection = () => {
                   height={30}
                 />
               </Link>
-              <Link href="./images/sns-icon/kakao_qr.jpg">
+              <Link href="./images/sns-icon/kakao-qr.jpg">
                 <Image
                   src={KakaoIcon}
                   alt="Kakao Icon"

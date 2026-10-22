@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/images/sns-icon/github_negative.png";
-import LinkedinIcon from "../../../public/images/sns-icon/linkedIn_negative.png";
-import InstragramIcon from "../../../public/images/sns-icon/instagram_negative.png";
-import MediumIcon from "../../../public/images/sns-icon/medium_negative.png";
+import GithubIcon from "../../../public/images/sns-icon/github-negative.png";
+import LinkedinIcon from "../../../public/images/sns-icon/linked-in-negative.png";
+import InstragramIcon from "../../../public/images/sns-icon/instagram-negative.png";
+import MediumIcon from "../../../public/images/sns-icon/medium-negative.png";
 import KakaoIcon from "../../../public/images/sns-icon/kakao.png";
-import LineIcon from "../../../public/images/sns-icon/line_white.png";
+import LineIcon from "../../../public/images/sns-icon/line-white.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -17,8 +17,8 @@ const EmailSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     const userEmail = e.target.email.value;
-    const subject = document.getElementById("subjectInput").value;
-    const message = document.getElementById("messageInput").value;
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
 
     if (!isValidEmail(userEmail)) {
       alert("Please enter a valid email address.");
@@ -41,7 +41,7 @@ const EmailSection = () => {
         function (response) {
           console.log("Email sent successfully", response);
           alert(
-            "Email sent successfully. I will send you my resume and portfolio shortly."
+            "Email sent successfully. I will get back to you shortly."
           );
           setEmailSubmitted(true);
         },
@@ -90,7 +90,7 @@ const EmailSection = () => {
           <Link href="https://medium.com/@fernnichanun">
             <Image src={MediumIcon} alt="Medium Icon" width={30} height={30} />
           </Link>
-          <Link href="./images/sns-icon/kakao_qr.jpg">
+          <Link href="./images/sns-icon/kakao-qr.jpg">
             <Image src={KakaoIcon} alt="Kakao Icon" width={30} height={30} />
           </Link>
           <Link href="https://line.me/ti/p/JTehJXJst6">
@@ -107,41 +107,41 @@ const EmailSection = () => {
           <form className="flex flex-col" onSubmit={sendEmail}>
             <div className="mb-6">
               <label
+                htmlFor="subject"
+                className="text-white block text-sm mb-2 font-medium"
+              >
+                Subject
+              </label>
+              <input
+                name="subject"
+                type="text"
+                id="subject"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Your subject"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="message"
+                className="text-white block text-sm mb-2 font-medium"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Let's talk about..."
+              />
+            </div>
+            <div className="mb-6">
+              <label
                 htmlFor="email"
                 className="text-white block mb-2 text-sm font-medium"
               >
                 Your email
               </label>
-              <div className="mb-6">
-                <label
-                  htmlFor="subject"
-                  className="text-white block text-sm mb-2 font-medium"
-                >
-                  Subject
-                </label>
-                <input
-                  name="subject"
-                  type="text"
-                  id="subject"
-                  required
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="Your subject"
-                />
-              </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="message"
-                  className="text-white block text-sm mb-2 font-medium"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="Let's talk about..."
-                />
-              </div>
               <input
                 name="email"
                 type="email"
