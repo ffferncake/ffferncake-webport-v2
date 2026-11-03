@@ -209,7 +209,7 @@ const TAB_DATA = [
             <div className="flex-start flex items-center pt-2 md:block md:pt-0">
               <div className="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-neutral-300 dark:bg-neutral-500 md:-mt-[5px] md:ml-0 md:mr-0"></div>
               <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-300">
-                2022.02 ~ 2024.01
+                2022.06 ~ 2024.01
               </p>
             </div>
             <div className="ml-4 mt-2 pb-5 md:ml-0">
