@@ -1,11 +1,11 @@
 "use client";
 import React, { useTransition, useState, useEffect } from "react";
 import Image from "next/image";
-import TabButton from "./TabButton";
+import TabButton from "../ui/tab-button";
 import KusIcon from "../../../public/images/education/kus.gif";
 import KuIcon from "../../../public/images/education/ku-modified.png";
-import YonseiIcon from "../../../public/images/education/YonseiUniversityEmblem.png";
-import GISIcon from "../../../public/images/education/gis_logo.png";
+import YonseiIcon from "../../../public/images/education/yonsei-university-emblem.png";
+import GISIcon from "../../../public/images/education/gis-logo.png";
 import JicaIcon from "../../../public/images/education/logo-jica.png";
 import MaholanIcon from "../../../public/images/education/maholan.png";
 
